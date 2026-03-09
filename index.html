@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Desktop Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<video autoplay muted loop id="video-bg">
+  <source src="media/background.mp4" type="video/mp4">
+</video>
+
+<div class="desktop">
+
+<div class="icon">
+<img src="icons/folder.png">
+<span>Projects</span>
+</div>
+
+<div class="icon">
+<img src="icons/user.png">
+<span>About</span>
+</div>
+
+<div class="icon">
+<img src="icons/mail.png">
+<span>Contact</span>
+</div>
+
+<div class="icon">
+<img src="icons/file.png">
+<span>Resume</span>
+</div>
+
+<div id="taskbar-placeholder"></div>
+
+<script src="clock.js"></script>
+
+<!-- other html -->
+<script>
+  fetch('taskbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('taskbar-placeholder').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

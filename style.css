@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900');
+
+body{
+margin:0;
+font-family:Bitcount Grid Single, sans-serif;
+height:100vh;
+overflow:hidden;
+}
+
+/* VIDEO BACKGROUND */
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* DESKTOP */
+
+.desktop {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 2;
+}
+
+/* ICONS */
+
+.icon{
+display:flex;
+flex-direction:column;
+align-items:center;
+cursor:pointer;
+width:80px;
+}
+
+.icon img{
+width:48px;
+margin-bottom:5px;
+}
+
+.icon span{
+font-size:14px;
+text-align:center;
+}
+
+.icon:hover{
+background:rgba(255,255,255,0.25);
+border-radius:6px;
+}
