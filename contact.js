@@ -1,6 +1,6 @@
 function openContactWindow() {
 
-    openWindow('Contact', null, null, 400, 500)
+    openWindow('Contact', 150, 60, 400, 500)
 
     fetch("contact.html")
         .then(res => res.text())
