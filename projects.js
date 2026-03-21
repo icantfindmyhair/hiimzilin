@@ -1,5 +1,5 @@
 function openProjectsWindow() {
-    openWindow("Projects", 600, 150, 700, 400);
+    openWindow("Projects", 600, 150, 750, 400);
 
     fetch("projects.html")
       .then(res => res.text())
